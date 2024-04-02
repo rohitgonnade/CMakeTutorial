@@ -22,3 +22,4 @@ add_executable(${PROJECT_NAME} main.cpp)
 target_link_libraries(AIM PRIVATE ${MY_CUSTOM_LIBRARY_1})
 
 add_subdirectory(use_first_lib)
+add_subdirectory(use_second_lib)

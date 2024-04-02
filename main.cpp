@@ -1,17 +1,17 @@
 
 #include "Use_First_class.h"
-#include "second_library.h"
+#include "Use_Second_class.h"
 #include "advance_print.h"
 #include <iostream>
 
 int main()
 {
     Use_First_class class1;
-    Second_Library sL;
+    Use_Second_class class2;
     Advance_print ap;
     
     class1.display();
+    class2.display();
 
-    std::cout << "2 Multiply by 10 = " << sL.mutiply_by_10(2) << " \n";
     std::cout << ap.value();
 }
