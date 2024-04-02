@@ -17,6 +17,8 @@ find_library(MY_CUSTOM_LIBRARY_1
 NAMES my_lib
 HINTS ${MY_LIBRARY_PATH})
 
-add_executable(AIM main.cpp)
+add_executable(${PROJECT_NAME} main.cpp)
 #target_link_libraries(AIM PRIVATE ${MY_LIBRARY_PATH}libMY_LIBRARY.so) #this also works
 target_link_libraries(AIM PRIVATE ${MY_CUSTOM_LIBRARY_1})
+
+add_subdirectory(use_first_lib)
