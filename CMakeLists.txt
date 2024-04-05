@@ -12,6 +12,8 @@ set(MY_LIBRARY_PATH /jenkins/myCmake_Projects/my_library_shared_libs/lib/)
 include_directories(${MY_LIBRARY_INCLUDE})
 
 add_executable(${PROJECT_NAME} main.cpp)
+target_link_libraries(${PROJECT_NAME} PRIVATE ${BOOST_LIBRARY})
 
 add_subdirectory(use_first_lib)
 add_subdirectory(use_second_lib)
+add_subdirectory(Use_boost_lib)
